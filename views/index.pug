@@ -19,23 +19,26 @@ block content
 
   P To get one record by id locally use http://localhost:3000/api/placeIdHere eg: http://localhost:3000/api/23 
   
-  P Host Urls to come
+  P To get all records https://erichislop-timezone.herokuapp.com/api
    
+  p To get one record by id locally use https://erichislop-timezone.herokuapp.com/api/placeIdHere eg: https://erichislop-timezone.herokuapp.com/api/23 
+
   hr
 
   p What challenges did you encounter during the timestamp conversion? How did you resolve these? 
 
   p Some challenges I faced with the time stamps was figuring out how to get the correct time based on the given time zone.
-    |  I used a module which gave the timezone from the provided Longitude and Latitude.
+    | I used a module which gave the timezone from the provided Longitude and Latitude.
     | I also found using a module I've used a lot in the past moment.js to be very helpful.
 
   p Were there any details where you had to make assumptions or decide to implement imperfectly?
 
   P I decided to implement the Extension 3 imperfectly which allows you to enter in 2 Longitudes and Latitudes 
-    | and it send back the distance between the two I felt this was a task I could achieve in the time frame. 
+    | and it send back the distance between the two I felt this was a task I could achieve in the time frame.
+  P I don't store the data so when to api is use it reads the csv every time.
 
   p If you were to redo this task, what improvements would you consider making?
 
-  p I would look into using mongodb I thought that it might have been simpler to setup than mysql I tried creating some 
-    | tables using code but I ended up spending a lot of time on this and decided to start fresh.
+  p I would look into using mongodb I thought that it might have been simpler to setup than mysql which I used to create some 
+    | tables using code but I ended up spending a lot of time on this and decided to start fresh and just.
     | I would also would have like to make things look nicer using bootstrap for example.
