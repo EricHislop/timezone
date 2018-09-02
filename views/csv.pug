@@ -1,0 +1,25 @@
+a(href='/') Home
+br
+a(href='/distance') Distance(Extension 3)
+
+- var length = data.length;
+- var n = 0;
+
+table(style='width:100%', border='1')
+  tr
+    th id
+    th timestamp_utc
+    th lng
+    th lat
+    th timezoneAbbreviation
+    th formatted date
+        each val in {data}
+            while length > n
+                tr
+                    td= val[n][0]
+                    td= val[n][1]
+                    td= val[n][2]
+                    td= val[n][3]
+                    td= val[n][4]
+                    td= val[n][5]
+                    - n++

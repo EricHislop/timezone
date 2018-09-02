@@ -1,0 +1,23 @@
+extends layout
+block content
+    a(href='/') Home
+    br
+    a(href='/csv') CSV(Task)
+
+    form(name="add-estimation", method="post")
+        div.input
+            span.label First Longitude: 
+            input(type="text", name="firstLongitude")
+        div.input
+            span.label First Latitude: 
+            input(type="text", name="firstLatitude")
+        div.input
+            span.label Second Longitude: 
+            input(type="text", name="secondLongitude")
+        div.input
+            span.label Second Latitude: 
+            input(type="text", name="secondLatitude")
+        div.actions
+            input(type="submit", value="calculate")
+
+    p Distance between provided Longitudes and Latitudes #{distanceBetween} km

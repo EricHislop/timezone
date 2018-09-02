@@ -1,0 +1,20 @@
+{
+  "name": "timezone",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "fast-csv": "^2.4.1",
+    "geo-tz": "^4.0.1",
+    "http-errors": "~1.6.2",
+    "moment": "^2.22.2",
+    "moment-timezone": "^0.5.21",
+    "morgan": "~1.9.0",
+    "pug": "2.0.0-beta11"
+  }
+}
